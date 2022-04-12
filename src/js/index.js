@@ -1,20 +1,23 @@
 import '../scss/style.scss';
 
-const swiper = new Swiper('.swiper-container  ', {
+const menuSwiper = new Swiper('.about__menu-slider  ', {
   
-  pagination: {
-    el: '.swiper-pagination',
-  },
 
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+  
 });
+
+const brandSwiper = new Swiper('.brand__slider', {
+  
+  // loop: true,
+  pagination: {
+    el: '.brand__swiper-pagination',
+  },
+
+  
+});
+
+
+
 
 console.log('Works!');
 

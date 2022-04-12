@@ -444,23 +444,15 @@ body {
   background-color: inherit; }
 
 .brand__slider {
-  width: 270px;
-  height: 72px; }
+  width: 200px;
+  height: 50px; }
 
 .brand__slider_item {
-  display: block;
-  background-color: #F8F8F8;
-  width: 270px;
-  height: 172px; }
-
-.brand__swiper-slide-item {
   display: flex;
   justify-content: space-between;
   border: 0.5px solid #EAEAEA;
-  width: 240px;
-  height: 50px;
   background-color: #FFFFFF;
   padding: 10px 8px 10px 8px;
-  margin-right: 100px;
+  margin-right: 40px;
   border-radius: 6px; }
 

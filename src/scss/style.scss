@@ -589,32 +589,30 @@ body {
     background-color: inherit;
   }
   &__slider{
-    width: 270px;
-    height: 72px;
+    width: 200px;
+    height: 50px;
   }
-  // &__menu-slider_wrapper{
-    
-  // }
+  
   &__slider_item{
-    display: block;
-    background-color: $bgColor;
-    width: 270px;
-    height: 172px;
-    
-  }
-  &__swiper-slide-item{
     display: flex;
     justify-content: space-between;
     border: 0.5px solid #EAEAEA;
-    width: 240px;
-    height: 50px;
     background-color: #FFFFFF;
-    
     padding: 10px 8px 10px 8px;
-    margin-right: 100px;
+    margin-right: 40px;
     border-radius: 6px;
-    
   }
+ 
+ 
+  
 }
+// .brand__swiper-pagination{
+//   position: relative !important;
+//   text-align: unset !important;
+//   top: 15px;
+//   left: 150px;
+  
+// }
+
 
 
