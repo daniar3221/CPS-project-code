@@ -498,10 +498,54 @@ body {
       display: block;
     }
   }
+  
+  .about{
+
+    &__header{
+      display: flex;
+    }
+    &__content{
+      display: flex;
+      justify-content: space-between;
+    }
+    &__image-block{
+      width: 50%;
+    }
+    &__text{
+      width: 50%;
+      padding-right: 5%;
+      
+    }
+  }
 }
 
 
+
 .about {
+  &__button{
+    margin-left: 20px;
+  }
+  &__button p{
+    position: relative;
+    top: -5px;
+  }
+  &__button button{
+    border: none;
+    background-color: #FF3E79;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    margin-left: 8px;
+    
+    & img{
+      position: relative;
+      top: 2px;
+    }
+  }
+
+  &__nav{
+    display: none;
+  } 
   &__side-border {
     border-right: 4px solid #41F6D7;
     border-radius: 70px;
@@ -567,6 +611,27 @@ body {
     margin-bottom: 20px;
   }
 }
+@media (min-width: 1440px){
+  .header {
+    display: none ;
+  }
+  .about{
+    padding-top:42px ;
+    &__nav{
+      display: flex;
+      margin: 0 0 0 auto;
+
+      
+    }
+    &__button{
+      display: flex;
+    }
+  }
+}
+
+
+
+
 
 .title {
   border-top: 1px solid $borderColor;
@@ -588,31 +653,39 @@ body {
     border: none;
     background-color: inherit;
   }
-  &__slider{
-    width: 200px;
-    height: 50px;
-  }
   
-  &__slider_item{
+  &__swiper-container{
+    // margin: 0 auto;
+    width: 200px;
+    height: 60px;
+    padding-left: 10px;
+  }
+  &__swiper-wrapper{
+    position: relative;
+  }
+  &__swiper-slide{
+    padding: 0 5px 0 5px;
     display: flex;
     justify-content: space-between;
-    border: 0.5px solid #EAEAEA;
-    background-color: #FFFFFF;
-    padding: 10px 8px 10px 8px;
-    margin-right: 40px;
+    border: 1px solid #EAEAEA;
     border-radius: 6px;
+    background-color: #FFFFFF;
   }
- 
- 
+  &__swiper-slide a{
+    display: inline-block;
+    margin: auto 0;
+  }
+  &__swiper-pagination{
+    // position: relative !important;
+    bottom: 20px;
+    // left: 0%;
+    // transform: translateY(-50%);
+  }
   
-}
-// .brand__swiper-pagination{
-//   position: relative !important;
-//   text-align: unset !important;
-//   top: 15px;
-//   left: 150px;
-  
-// }
+ }
+
+
+
 
 
 

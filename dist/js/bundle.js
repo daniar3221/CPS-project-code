@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n\nvar menuSwiper = new Swiper('.about__menu-slider  ', {});\nvar brandSwiper = new Swiper('.brand__slider', {\n  // loop: true,\n  pagination: {\n    el: '.brand__swiper-pagination'\n  }\n});\nconsole.log('Works!');\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n\nvar menuSwiper = new Swiper('.about__menu-slider  ', {\n  pagination: {\n    // el: '.brand__swiper-pagination',\n    type: '.bullets'\n  }\n});\nvar brandSwiper = new Swiper(\".brand__swiper-container\", {\n  spaceBetween: 16,\n  pagination: {\n    el: '.brand__swiper-pagination' // type: '.bullets',\n\n  }\n});\nconsole.log('Works!');\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 
