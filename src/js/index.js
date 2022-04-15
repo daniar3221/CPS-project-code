@@ -9,17 +9,36 @@ const menuSwiper = new Swiper('.about__menu-slider  ', {
   
 });
 
-const brandSwiper = new Swiper(".brand__swiper-container",{
+const brandSwiper = new Swiper('.brand__swiper-container',{
 
-  
+  slidesPerView: 1,
   spaceBetween: 16,
-  pagination:{
+
+  pagination: {
     el: '.brand__swiper-pagination',
-    // type: '.bullets',
-  }
+  },
 
 });
 
+const electronic = new Swiper('.electronic__swiper-container',{
+  slidesPerView: 1,
+  spaceBetween: 16,
+
+  pagination: {
+    el: '.electronic__swiper-pagination',
+  },
+
+});
+
+const price = new Swiper('.price__swiper-container',{
+  slidesPerView: 1,
+  spaceBetween: 16,
+
+  pagination: {
+    el: '.price__swiper-pagination',
+  },
+
+});
 
 
 

@@ -16,7 +16,8 @@ html {
 /**
  * Remove the margin in all browsers.
  */
-body {
+body,
+h4 {
   margin: 0; }
 
 /**
@@ -438,6 +439,7 @@ body {
 .about__image-img {
   display: block;
   width: 100%;
+  border-radius: 5px;
   margin: 0 auto; }
 
 .about__read-more-button {
@@ -456,17 +458,6 @@ body {
 
 .about__footer {
   margin-bottom: 20px; }
-
-@media (min-width: 1440px) {
-  .header {
-    display: none; }
-  .about {
-    padding-top: 42px; }
-    .about__nav {
-      display: flex;
-      margin: 0 0 0 auto; }
-    .about__button {
-      display: flex; } }
 
 .title {
   border-top: 1px solid #D9FFF5;
@@ -487,15 +478,14 @@ body {
 
 .brand__swiper-container {
   width: 200px;
-  height: 60px;
   padding-left: 10px; }
 
-.brand__swiper-wrapper {
-  position: relative; }
-
 .brand__swiper-slide {
-  padding: 0 5px 0 5px;
+  padding: 5px 5px 5px 5px;
+  margin-bottom: 40px;
+  min-height: 55px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   border: 1px solid #EAEAEA;
   border-radius: 6px;
@@ -505,6 +495,125 @@ body {
   display: inline-block;
   margin: auto 0; }
 
-.brand__swiper-pagination {
-  bottom: 20px; }
+.swiper-pagination-bullet {
+  background-color: #B5B6BC;
+  width: 10px;
+  height: 10px; }
+
+.electronic__swiper-container {
+  width: 240px;
+  padding-left: 10px; }
+
+.electronic__swiper-slide {
+  padding: 16px;
+  margin-bottom: 40px;
+  position: relative;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  background-color: #FFFFFF; }
+  .electronic__swiper-slide p {
+    position: absolute;
+    top: 0; }
+  .electronic__swiper-slide a {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: 16px; }
+
+.price__swiper-container {
+  width: 260px;
+  padding-left: 10px; }
+
+.price__swiper-slide {
+  padding: 16px;
+  margin-bottom: 40px;
+  position: relative;
+  height: 190px;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  background-color: #FFFFFF; }
+  .price__swiper-slide h4 {
+    font-size: 14px;
+    color: #7E7E82;
+    margin-top: 5px; }
+  .price__swiper-slide p {
+    font-size: 14px; }
+
+.price__button {
+  font-family: "TTLakes Bold";
+  font-weight: bold;
+  position: absolute;
+  padding: 0 16px 0 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  right: 15px;
+  bottom: 15px;
+  border: none;
+  border-radius: 16px;
+  width: 120px;
+  height: 32px;
+  background-color: #FF3E79;
+  text-transform: uppercase; }
+  .price__button p {
+    color: #fff; }
+
+.commercial {
+  align-items: center; }
+  .commercial__content {
+    padding-right: 30px;
+    line-height: 20px; }
+  .commercial__button {
+    width: 30%;
+    padding: 0;
+    font-weight: bold;
+    border: none;
+    background-color: inherit;
+    text-align: left; }
+    .commercial__button img {
+      position: relative;
+      top: 2px;
+      margin-left: 15px; }
+
+.footer {
+  color: #7E7E82;
+  font-weight: 500;
+  margin-top: 47px;
+  border-top: 1px solid #D9FFF5;
+  text-align: center; }
+  .footer p {
+    display: inline-block;
+    width: 100%; }
+
+@media (min-width: 768px) {
+  .footer {
+    text-align: left; }
+    .footer__container {
+      align-items: center; }
+    .footer p {
+      display: inline-block;
+      width: 33%; }
+    .footer__rights {
+      text-align: left; }
+    .footer__confid {
+      text-align: center; }
+    .footer__info {
+      text-align: right; } }
+
+@media (min-width: 1440px) {
+  body {
+    display: flex; }
+  .header {
+    display: none; }
+  .about {
+    padding-top: 42px; }
+    .about__nav {
+      display: flex;
+      margin: 0 0 0 auto; }
+    .about__button {
+      display: flex; } }
 
